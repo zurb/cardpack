@@ -1,0 +1,17 @@
+.card-columns {
+  column-count: 2;
+  column-gap: 20px;
+
+   @include breakpoint(medium) {
+    column-count: 3;
+    column-gap: 20px;
+  }
+    @include breakpoint(xlarge) {
+    column-count: 4;
+  }
+
+  .card {
+    display: inline-block;
+    width: 100%;
+  }
+}

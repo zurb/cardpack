@@ -1,0 +1,169 @@
+.product-card {
+  .product-card-name {
+    margin-bottom: 0;
+  }
+
+  .product-card-subname {
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin-bottom: 0;
+    color: $body-font-color;
+  }
+
+  .product-card-cta {
+    margin-bottom: 0;
+    color: $body-font-color;
+  }
+
+  .product-card-price {
+    font-size: 1.8rem;
+    color: $body-font-color;
+  }
+
+  &.with-badge {
+    position: relative;
+
+    &::after {
+      content: '♨';
+      background-color: $warning-color;
+      color: $white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: $global-padding;
+    }
+  }
+}
+
+.card-product {
+  position: relative;
+
+  .card-product-actions .menu li a {
+    &:hover {
+      background: none;
+    }
+  }
+  .card-product-actions .menu.simple li:last-of-type {
+    margin-right: 0;
+  }
+
+  .card-product-price {
+    color: $primary-color;
+  }
+
+  .fa-heart-o {
+    &:hover {
+      color: $alert-color;
+    }
+
+    &.is-liked {
+      -webkit-text-fill-color: $alert-color;
+      -webkit-text-stroke-color: $alert-color;
+      text-rendering: Antialiased;
+    }
+  }
+
+  .fa-star {
+    color: $warning-color;
+  }
+
+  .card-product-action-popup {
+    display: none;
+    padding: $card-padding;
+    border: $card-border;
+    background: $card-background;
+    position:absolute;
+    bottom: 0;
+    right: 2.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+
+    button:not(:last-of-type) {
+      margin-bottom: 0.5rem;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    &.is-open {
+      display: flex;
+    }
+
+    .fa-thumbs-up {
+      margin-right: 0.5rem;
+
+      &:hover {
+        color: $success-color;
+      }
+
+      &.is-liked {
+        color: $success-color;
+      }
+    }
+
+    .fa-share {
+      margin-right: 0.5rem;
+
+      &:hover {
+        color: $primary-color;
+      }
+
+      &.is-liked {
+        color: $primary-color;
+      }
+    }
+
+    .fa-search-plus {
+      margin-right: 0.5rem;
+
+      &:hover {
+        color: $secondary-color;
+      }
+
+      &.is-liked {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.card-product-title {
+  margin-bottom: 0;
+  flex-basis: 75%;
+}
+
+@include breakpoint(large) {
+  .card-product.horizontal {
+    flex-direction: row;
+
+    .card-section {
+      flex: 1 1 auto;
+
+      &.card-product-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+
+    .card-product-action-popup {
+      right: 0;
+      top: 4.5rem;
+      flex-direction: column;
+
+      button {
+        display: flex;
+      }
+    }
+  }
+}
+
+.card-product.horizontal {
+  @include breakpoint(medium down) {
+    .card-product-details {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

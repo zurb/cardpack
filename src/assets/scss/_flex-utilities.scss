@@ -1,0 +1,33 @@
+.card-divider {
+  display: flex;
+
+  &.hollow {
+    background: $card-background;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.card hr {
+  margin: 0;
+}
+
+.card-section,
+.card-divider {
+  position: relative;
+}
+
+.card-toggle-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.button-group {
+  .flex-child-grow {
+    flex: 1 0 auto;
+  }
+}

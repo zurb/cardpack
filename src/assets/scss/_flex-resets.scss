@@ -11,4 +11,18 @@
 
 .card {
   flex-basis: 100%;
+  position: relative;
+}
+
+.card-section,
+.card-divider {
+  position: relative;
+}
+
+.card hr {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
 }

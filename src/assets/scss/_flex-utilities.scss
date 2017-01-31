@@ -6,17 +6,12 @@
   }
 }
 
-button {
-  cursor: pointer;
-}
-
-.card hr {
-  margin: 0;
-}
-
 .card-section,
 .card-divider {
-  position: relative;
+
+  &.collapse {
+    padding: 0;
+  }
 }
 
 .card-toggle-icon {
@@ -30,4 +25,29 @@ button {
   .flex-child-grow {
     flex: 1 0 auto;
   }
+}
+
+.hover-action-section {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  a:not(:first-of-type) {
+    margin-left: 0.5rem;
+  }
+}
+
+.hover-action:hover .hover-action-section {
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+
+.truncate {
+  width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

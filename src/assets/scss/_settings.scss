@@ -76,6 +76,8 @@ $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
 
+$global-transition: all 0.2 ease-in;
+
 // 2. Breakpoints
 // --------------
 

@@ -1,14 +1,9 @@
 .card-divider {
   display: flex;
-
-  &.hollow {
-    background: $card-background;
-  }
 }
 
 .card-section,
 .card-divider {
-
   &.collapse {
     padding: 0;
   }
@@ -45,19 +40,19 @@
   transition: opacity 0.2s ease-in;
 }
 
-.card-hover-reveal-section {
-  opacity: 0;
-  height: 0;
-  padding: 0;
-  transition: all 0.2s ease-in;
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
 }
 
-.card-hover-reveal:hover {
-  .card-hover-reveal-section {
-    opacity: 1;
-    height: 100%;
-    padding: $global-padding;
-    transition: all 0.2s ease-in;
+.card-hover-reveal-section {
+  display: none;
+
+  &.fade-in {
+    display: block;
   }
 }
 

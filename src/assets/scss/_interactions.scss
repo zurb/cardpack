@@ -1,0 +1,21 @@
+$card-shadow: 0 10px 20px 0 rgba(168,182,191,0.6);
+
+.hover-card-border {
+  transition: $global-transition;
+
+  &:hover {
+    border-color: $primary-color;
+
+    h1,h2,h3,h4,h5,h6 {
+      color: $primary-color;
+    }
+  }
+}
+
+.hover-card-shadow {
+  transition: $global-transition;
+
+  &:hover {
+    box-shadow: $card-shadow;
+  }
+}

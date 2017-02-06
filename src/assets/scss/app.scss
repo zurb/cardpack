@@ -55,7 +55,12 @@
 @import 'card-columns';
 @import 'flex-resets';
 @import 'flex-utilities';
+@import 'interactions';
 
 // custom card styles
+@import 'components/icons';
+@import 'components/avatar';
+@import 'components/status';
 @import 'components/product-cards';
+@import 'components/info-cards';
 

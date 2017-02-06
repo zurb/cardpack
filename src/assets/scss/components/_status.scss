@@ -1,0 +1,10 @@
+.status {
+  color: $primary-color;
+  font-size: 11px;
+  text-align: right;
+
+  .stat {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

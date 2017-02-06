@@ -9,6 +9,20 @@
   }
 }
 
+// for icon groups
+.card-actions {
+  display: flex;
+  flex-basis: 60px;
+
+  &.medium {
+    flex-basis: 85px;
+  }
+
+  &.wide {
+    width: 50%;
+  }
+}
+
 .card-toggle-icon {
   position: absolute;
   top: 0.5rem;
@@ -56,7 +70,7 @@
   }
 }
 
-.card.borderless {
+.borderless {
   border: none;
 
   &.card-section,

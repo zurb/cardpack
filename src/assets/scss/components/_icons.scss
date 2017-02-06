@@ -1,0 +1,16 @@
+.fa:not(.fa-heart) {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.badge {
+  vertical-align: text-top;
+
+  &.two-digit {
+    padding: 0.65em 0.25em;
+  }
+
+  &.tiny {
+    font-size: 0.6rem;
+  }
+}

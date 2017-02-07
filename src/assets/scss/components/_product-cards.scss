@@ -133,7 +133,7 @@
 }
 
 @include breakpoint(large) {
-  .card-product.horizontal {
+  .horizontal {
     flex-direction: row;
 
     .card-section {
@@ -154,15 +154,6 @@
       button {
         display: flex;
       }
-    }
-  }
-}
-
-.card-product.horizontal {
-  @include breakpoint(medium down) {
-    .card-product-details {
-      display: flex;
-      justify-content: space-between;
     }
   }
 }

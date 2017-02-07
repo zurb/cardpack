@@ -119,3 +119,14 @@
 .rounded {
   border-radius: $global-rounded;
 }
+
+.floating-label {
+  @extend .label;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+
+  &.right {
+    right: 1rem;
+  }
+}

@@ -1,7 +1,7 @@
 .avatar {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 115px;
+  height: 115px;
 
   &.small {
     width: 30px;
@@ -9,7 +9,11 @@
   }
 
   &.large {
-    width: 75px;
-    height: 75px;
+    width: 175px;
+    height: 175px;
+  }
+
+  &.content-right {
+    margin-right: 0.5rem;
   }
 }

@@ -15,7 +15,7 @@
   flex-basis: 60px;
 
   &.medium {
-    flex-basis: 85px;
+    flex-basis: 90px;
   }
 
   &.wide {
@@ -77,5 +77,15 @@
   &.card-divider {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.button-group {
+  flex-basis: 100%;
+
+  &.expanded {
+    .button {
+      flex-grow: 1;
+    }
   }
 }

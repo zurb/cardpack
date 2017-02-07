@@ -1,0 +1,16 @@
+blockquote {
+  margin: 1rem auto;
+  font-size: rem-calc(25);
+  line-height: 36px;
+  border-left: none;
+  font-style: italic;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  font-size: rem-calc(18);
+  line-height: 40px;
+  margin-top: 0.875rem;
+  text-transform: uppercase;
+}

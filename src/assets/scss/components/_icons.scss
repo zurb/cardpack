@@ -18,4 +18,11 @@
   &.tiny {
     font-size: 0.6rem;
   }
+
+  &.hollow {
+    border: 1px solid $dark-gray;
+    background: transparent;
+    color: $body-font-color;
+    padding: 1em;
+  }
 }

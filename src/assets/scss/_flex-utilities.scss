@@ -11,15 +11,8 @@
 
 // for icon groups
 .card-actions {
-  display: flex;
-  flex-basis: 60px;
-
-  &.medium {
-    flex-basis: 90px;
-  }
-
-  &.wide {
-    width: 50%;
+  *:not(:first-child) {
+    margin-left: 0.875rem;
   }
 }
 

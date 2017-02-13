@@ -14,3 +14,16 @@ blockquote cite {
   margin-top: 0.875rem;
   text-transform: uppercase;
 }
+
+.meta-data {
+  color: $dark-gray;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 11px;
+  margin-bottom: 0px;
+
+  &.with-underline {
+    border-bottom: 1px solid $dark-gray;
+  }
+}
